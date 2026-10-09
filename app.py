@@ -43,15 +43,17 @@ st.markdown(
     <style>
     /* Reducimos el espacio vacío de arriba para ganar pantalla */
     .block-container {padding-top: 2rem;}
-    /* Damos estilo de tarjeta a cada métrica KPI */
+    /* Damos estilo de tarjeta a cada KPI; colores semitransparentes que funcionan en modo claro y oscuro */
     div[data-testid="stMetric"] {
-        background-color: #F7F9FC;
-        border: 1px solid #E3E8EF;
+        background-color: rgba(128, 128, 128, 0.10);
+        border: 1px solid rgba(128, 128, 128, 0.35);
         border-radius: 12px;
         padding: 16px 20px;
     }
-    /* Ajustamos el tamaño del número grande de la tarjeta */
-    div[data-testid="stMetricValue"] {font-size: 1.9rem; color: #1F2A44;}
+    /* El título de la tarjeta usa el color del tema (se ve en claro y en oscuro) */
+    div[data-testid="stMetricLabel"] {opacity: 0.85;}
+    /* Ajustamos el tamaño del número grande; su color lo decide el tema automáticamente */
+    div[data-testid="stMetricValue"] {font-size: 1.9rem;}
     </style>
     """,
     unsafe_allow_html=True,  # permitimos que Streamlit interprete el HTML/CSS de arriba
