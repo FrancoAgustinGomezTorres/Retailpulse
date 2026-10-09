@@ -4,7 +4,7 @@
 
 RetailPulse convierte más de 800 mil líneas de transacciones en un tablero que responde preguntas de negocio: ¿cuánto vendemos?, ¿qué productos dominan?, ¿quiénes son nuestros mejores clientes?, ¿a quién deberíamos intentar recuperar?
 
-🔗 **Demo en vivo:** _pega aquí el enlace de tu app en Streamlit Community Cloud_
+🔗 **Demo en vivo:** _[Retailpulse Demo](https://retailpulse-francoagustingt.streamlit.app/)_
 
 ![Vista previa de RetailPulse](docs/captura.png)
 <!-- Sube una captura de pantalla a la carpeta docs/ con el nombre captura.png, o borra esta línea -->
@@ -89,8 +89,8 @@ retailpulse/
 
 ## 👤 Autor
 
-**Tu Nombre** · [LinkedIn](https://www.linkedin.com/in/tu-perfil) · [GitHub](https://github.com/TU_USUARIO)
+**Franco Agustin Gomez Torres** · [LinkedIn](https://www.linkedin.com/in/franco-agustin-gomez-torres-9341213b8/) · [GitHub](https://github.com/FrancoAgustinGomezTorres)
 
 ---
 
-_Proyecto de portafolio en análisis de datos. Si te resultó útil, ¡déjale una ⭐ al repositorio!_
+_Proyecto de portafolio en análisis de datos._
