@@ -95,7 +95,7 @@ El análisis que genera los datos de la app está en [`notebooks/Proyecto1_RFM.i
 
 ## 👤 Autor
 
-**Franco Agustin Gomez Torres** · [LinkedIn](https://www.linkedin.com/in/franco-agustin-gomez-torres-9341213b8/)) · [GitHub]((https://github.com/FrancoAgustinGomezTorres))
+**Franco Agustin Gomez Torres** · [LinkedIn](https://www.linkedin.com/in/franco-agustin-gomez-torres-9341213b8/) · [GitHub](https://github.com/FrancoAgustinGomezTorres)
 
 ---
 
