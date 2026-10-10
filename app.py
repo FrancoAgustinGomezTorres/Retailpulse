@@ -74,9 +74,18 @@ st.markdown(
 # 2. CARGA DE DATOS (con caché para que sea rápido)
 # ----------------------------------------------------------
 
+# Devuelve la "firma" de los archivos de datos: su fecha de última modificación
+def firma_datos():
+    # Rutas de los dos archivos de datos que usa la app
+    archivos = [CARPETA / "data" / "ventas_limpias.csv.gz", CARPETA / "data" / "clientes_rfm.csv"]
+    # Devolvemos sus fechas de modificación; si alguien cambia un archivo, la firma cambia
+    return tuple(archivo.stat().st_mtime for archivo in archivos)
+
+
 # @st.cache_data guarda el resultado en memoria: los CSV se leen UNA sola vez, no en cada clic
+# El parámetro "firma" no se usa dentro; sirve para que la caché se renueve sola cuando cambian los archivos
 @st.cache_data(show_spinner="Cargando datos...")
-def cargar_datos():
+def cargar_datos(firma):
     # Leemos las ventas (archivo comprimido .gz) y convertimos InvoiceDate a fecha
     ventas = pd.read_csv(CARPETA / "data" / "ventas_limpias.csv.gz", parse_dates=["InvoiceDate"])
     # Leemos la tabla de clientes con su RFM y su segmento
@@ -102,7 +111,7 @@ def cargar_datos():
 
 
 # Ejecutamos la función; gracias a la caché, solo tarda la primera vez
-ventas, clientes = cargar_datos()
+ventas, clientes = cargar_datos(firma_datos())
 
 
 # ----------------------------------------------------------
